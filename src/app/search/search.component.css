@@ -1,0 +1,30 @@
+
+.search-header {
+    height: 128px;
+    background-image: url("src/assets/images/headerbg.png");
+}
+.recap-logo {
+    font-size: 100px;
+    padding-top: 20px;
+    font-weight: bold;
+    display: inline;
+}
+.vr-line {
+    border-right: 1px solid black;
+    display: inline;
+    padding-left: 20px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.recap_text-aln {
+    display: inline;
+}
+.text-cons-align {
+    display: inline;
+}
+.search-tab {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}

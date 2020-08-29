@@ -1,0 +1,56 @@
+
+.search-header {
+    height: 128px;
+    background-image: url("src/assets/images/headerbg.png");
+}
+.recap-logo {
+    padding-top: 20px;
+    font-weight: bold;
+    display: inline;
+}
+.vr-line {
+    border-right: 1px solid black;
+    display: inline;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.recap-text-aln {
+    display: inline;
+}
+.text-cons-align {
+    display: inline;
+    padding-left: 78px;
+}
+.content-tabs {
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+.tab-search {
+    padding-right: 15px;
+    padding-left: 47px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    display: inline;
+}
+.tab-collection {
+    display: inline;
+    
+}
+body{   
+    width: 100vw;
+    height: 100vh;
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+    background-color:#EEF3F2;
+  }
+.dashboard-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}  
+
+.list-tabs {
+    color: #707171;
+}

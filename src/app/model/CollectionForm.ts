@@ -1,0 +1,48 @@
+import { SearchResultRow } from '../model/SearchResultRow';
+
+export class CollectionForm{
+    bibId: String;
+    title: String;
+    author: String;
+    publisher: String;
+    publishedDate: String;
+    owningInstitution: String;
+    callNumber: String;
+    leaderMaterialType: String;
+    tag000: String;
+    controlNumber001: String;
+    controlNumber005: String;
+    controlNumber008: String;
+    content: String;
+    bibDataFields: [];
+    errorMessage: String;
+    warningMessage: String;
+    itemId: String;
+    availability: String;
+    barcode: String;
+    locationCode: String;
+    useRestriction: String;
+    monographCollectionGroupDesignation: String;
+    collectionGroupDesignation: String;
+    newCollectionGroupDesignation: String;
+    cgdChangeNotes: String;
+    customerCode: String;
+    deaccessionType: String;
+    deaccessionNotes: String;
+    deliveryLocations: [];
+    deliveryLocation: String;
+    shared: boolean;
+    submitted: boolean;
+    message: String;
+    collectionAction: String;
+    allowEdit: boolean;
+    username: String;
+    itemBarcodes: String;
+    showResults: boolean;
+    selectAll: boolean;
+    //errorMessage: String;   
+    barcodesNotFoundErrorMessage: String;
+    ignoredBarcodesErrorMessage: String;
+    searchResultRows: SearchResultRow[] ;
+    showModal: boolean;
+}

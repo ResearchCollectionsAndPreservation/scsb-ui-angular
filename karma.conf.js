@@ -3,6 +3,8 @@
 
 module.exports = function (config) {
   config.set({
+    browserNoActivityTimeout: 60000,
+    browserDisconnectTimeout: 60000,
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
@@ -16,6 +18,14 @@ module.exports = function (config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     coverageIstanbulReporter: {
+      reports: ['html', 'lcovonly'],
+      fixWebpackSourcePaths: true,
+      thresholds: {
+        statements: 80,
+        lines: 80,
+        branches: 80,
+        functions: 80
+      },
       dir: require('path').join(__dirname, './coverage/Phase4-SCSB-UI-Angular'),
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true

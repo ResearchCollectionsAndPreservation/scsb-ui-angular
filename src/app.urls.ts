@@ -5,5 +5,6 @@ export const urls = {
     search: '/search',
     collection: '/collection',
     requests: '/requests',
-    reports: '/reports'
+    reports: '/reports',
+    jobs: '/jobs'
 }

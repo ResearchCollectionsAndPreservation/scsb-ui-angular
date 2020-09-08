@@ -1,8 +1,10 @@
-import { Injectable,Inject } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { urls } from 'src/app.urls';
 import { appConfig } from 'src/app.config';
 import { HttpClient } from "@angular/common/http";
+import { UserRoleForm } from '../../model/UserRoleForm';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -13,86 +15,86 @@ export class UserRolesService {
   baseUrl = urls.baseUrl;
   prefix = urls.userRoles;
 
-  showUserRoles(): Observable<any> {
+  showUserRoles(): Observable<String> {
     this.baseUrl = urls.baseUrl;
-    return this.httpClient.get<any>(this.baseUrl + this.prefix + "/userRoles",
+    return this.httpClient.get<String>(this.baseUrl + this.prefix + "/userRoles",
       {
         headers: appConfig.getHeaders()
       });
   }
-  searchUserRole(): Observable<any> {
+  searchUserRole(): Observable<UserRoleForm> {
     this.baseUrl = urls.baseUrl;
-    return this.httpClient.post<any[]>(this.baseUrl + this.prefix + "/searchUsers",
+    return this.httpClient.post<UserRoleForm>(this.baseUrl + this.prefix + "/searchUsers",
       {
         headers: appConfig.getHeaders()
       });
   }
-  deleteUserRole(): Observable<any> {
+  deleteUserRole(): Observable<UserRoleForm> {
     this.baseUrl = urls.baseUrl;
-    return this.httpClient.get<any[]>(this.baseUrl + this.prefix + "/deleteUser",
+    return this.httpClient.get<UserRoleForm>(this.baseUrl + this.prefix + "/deleteUser",
       {
         headers: appConfig.getHeaders()
       });
   }
-  deleteUser(): Observable<any> {
+  deleteUser(): Observable<UserRoleForm> {
     this.baseUrl = urls.baseUrl;
-    return this.httpClient.get<any[]>(this.baseUrl + this.prefix + "/delete",
+    return this.httpClient.get<UserRoleForm>(this.baseUrl + this.prefix + "/delete",
       {
         headers: appConfig.getHeaders()
       });
   }
-  searchFirstPage(): Observable<any> {
+  searchFirstPage(): Observable<UserRoleForm> {
     this.baseUrl = urls.baseUrl;
-    return this.httpClient.post<any[]>(this.baseUrl + this.prefix + "/first",
+    return this.httpClient.post<UserRoleForm>(this.baseUrl + this.prefix + "/first",
       {
         headers: appConfig.getHeaders()
       });
   }
-  searchNextPage(): Observable<any> {
+  searchNextPage(): Observable<UserRoleForm> {
     this.baseUrl = urls.baseUrl;
-    return this.httpClient.post<any[]>(this.baseUrl + this.prefix + "/next",
+    return this.httpClient.post<UserRoleForm>(this.baseUrl + this.prefix + "/next",
       {
         headers: appConfig.getHeaders()
       });
   }
-  searchPreviousPage(): Observable<any> {
+  searchPreviousPage(): Observable<UserRoleForm> {
     this.baseUrl = urls.baseUrl;
-    return this.httpClient.post<any[]>(this.baseUrl + this.prefix + "/previous",
+    return this.httpClient.post<UserRoleForm>(this.baseUrl + this.prefix + "/previous",
       {
         headers: appConfig.getHeaders()
       });
   }
-  searchLastPage(): Observable<any> {
+  searchLastPage(): Observable<UserRoleForm> {
     this.baseUrl = urls.baseUrl;
-    return this.httpClient.post<any[]>(this.baseUrl + this.prefix + "/last",
+    return this.httpClient.post<UserRoleForm>(this.baseUrl + this.prefix + "/last",
       {
         headers: appConfig.getHeaders()
       });
   }
-  createUserRequest(): Observable<any> {
+  createUserRequest(): Observable<UserRoleForm> {
     this.baseUrl = urls.baseUrl;
-    return this.httpClient.post<any[]>(this.baseUrl + this.prefix + "/createUser",
+    return this.httpClient.post<UserRoleForm>(this.baseUrl + this.prefix + "/createUser",
       {
         headers: appConfig.getHeaders()
       });
   }
-  editUser(): Observable<any> {
+  editUser(): Observable<UserRoleForm> {
     this.baseUrl = urls.baseUrl;
-    return this.httpClient.post<any[]>(this.baseUrl + this.prefix + "/editUser",
+    return this.httpClient.post<UserRoleForm>(this.baseUrl + this.prefix + "/editUser",
       {
         headers: appConfig.getHeaders()
       });
   }
-  saveEditUserDetails(): Observable<any> {
+  saveEditUserDetails(): Observable<UserRoleForm> {
     this.baseUrl = urls.baseUrl;
-    return this.httpClient.get<any[]>(this.baseUrl + this.prefix + "/saveEditUserDetails",
+    return this.httpClient.get<UserRoleForm>(this.baseUrl + this.prefix + "/saveEditUserDetails",
       {
         headers: appConfig.getHeaders()
       });
   }
-  goBack(): Observable<any> {
+  goBack(): Observable<UserRoleForm> {
     this.baseUrl = urls.baseUrl;
-    return this.httpClient.post<any[]>(this.baseUrl + this.prefix + "/goBack",
+    return this.httpClient.post<UserRoleForm>(this.baseUrl + this.prefix + "/goBack",
       {
         headers: appConfig.getHeaders()
       });

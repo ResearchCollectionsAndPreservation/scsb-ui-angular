@@ -2,13 +2,13 @@ import { SearchResultRow } from '../model/SearchResultRow';
 
 export class SearchRecord {
 
-    fieldValue: String;
-    fieldName: String;
-    owningInstitutions: String[];
-    collectionGroupDesignations: String[];
-    availability: String[];
-    materialTypes: String[];
-    useRestrictions: String[];
+    fieldValue: string;
+    fieldName: string;
+    owningInstitutions: string[];
+    collectionGroupDesignations: string[];
+    availability: string[];
+    materialTypes: string[];
+    useRestrictions: string[];
     searchResultRows: SearchResultRow[];
     totalPageCount: number;
     totalBibRecordsCount: string;
@@ -21,8 +21,8 @@ export class SearchRecord {
     selectAllFacets: boolean;
     showTotalCount: boolean;
     index: number;
-    errorMessage: String;
+    errorMessage: string;
     deleted: boolean;
-    catalogingStatus: String;
+    catalogingStatus: string;
 
 }

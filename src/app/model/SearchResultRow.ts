@@ -3,18 +3,18 @@ import { SearchItemResultRow } from '../model/SearchItemResultRow';
 export class SearchResultRow {
     
     bibId: number;
-    title: String;
-    author: String;
-    publisher: String;
-    publisherDate: String;
-    owningInstitution: String;
-    customerCode: String;
-    collectionGroupDesignation: String;
-    useRestriction: String;
-    barcode: String;
-    summaryHoldings: String;
-    availability: String;
-    leaderMaterialType: String;
+    title: string;
+    author: string;
+    publisher: string;
+    publisherDate: string;
+    owningInstitution: string;
+    customerCode: string;
+    collectionGroupDesignation: string;
+    useRestriction: string;
+    barcode: string;
+    summaryHoldings: string;
+    availability: string;
+    leaderMaterialType: string;
     selected: boolean;
     showItems: boolean;
     selectAllItems: boolean;
@@ -23,14 +23,14 @@ export class SearchResultRow {
     showAllItems: false;
 
     requestId: number;
-    patronBarcode: String;
-    requestingInstitution: String;
-    deliveryLocation: String;
-    requestType: String;
-    requestNotes: String;
-    requestCreatedBy: String;
-    patronEmailId: String;
-    status: String;
+    patronBarcode: string;
+    requestingInstitution: string;
+    deliveryLocation: string;
+    requestType: string;
+    requestNotes: string;
+    requestCreatedBy: string;
+    patronEmailId: string;
+    status: string;
     createdDate: Date = new Date();
     lastUpdatedDate: Date = new Date();
 

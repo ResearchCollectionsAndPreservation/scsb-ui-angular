@@ -11,7 +11,7 @@ import { SearchRecord } from 'src/app/model/SearchRecord';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-  data: SearchRecord[];
+  data: SearchRecord;
   errorMessage: string;
   constructor(private searchService: SearchService) { }
 

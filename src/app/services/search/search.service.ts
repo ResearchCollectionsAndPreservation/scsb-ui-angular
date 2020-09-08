@@ -17,50 +17,50 @@ export class SearchService {
   baseUrl = urls.baseUrl;
   prefix = urls.search;
 
-  getLast(): Observable<SearchRecord[]> {
-    return this.httpClient.post<SearchRecord[]>(this.baseUrl + this.prefix + "/last", {},
+  getLast(): Observable<SearchRecord> {
+    return this.httpClient.post<SearchRecord>(this.baseUrl + this.prefix + "/last", {},
       {
         headers: appConfig.getHeaders()
       });
   }
-  getPrevious(): Observable<SearchRecord[]> {
-    return this.httpClient.post<SearchRecord[]>(this.baseUrl + this.prefix + "/previous", {},
+  getPrevious(): Observable<SearchRecord> {
+    return this.httpClient.post<SearchRecord>(this.baseUrl + this.prefix + "/previous", {},
       {
         headers: appConfig.getHeaders()
       });
   }
-  getFirst(): Observable<SearchRecord[]> {
-    return this.httpClient.post<SearchRecord[]>(this.baseUrl + this.prefix + "/first", {},
+  getFirst(): Observable<SearchRecord> {
+    return this.httpClient.post<SearchRecord>(this.baseUrl + this.prefix + "/first", {},
       {
         headers: appConfig.getHeaders()
       });
   }
-  getClear(): Observable<SearchRecord[]> {
-    return this.httpClient.post<SearchRecord[]>(this.baseUrl + this.prefix + "/clear", {},
+  getClear(): Observable<SearchRecord> {
+    return this.httpClient.post<SearchRecord>(this.baseUrl + this.prefix + "/clear", {},
       {
         headers: appConfig.getHeaders()
       });
   }
-  getnewSearch(): Observable<SearchRecord[]> {
-    return this.httpClient.post<SearchRecord[]>(this.baseUrl + this.prefix + "/newSearch", {},
+  getnewSearch(): Observable<SearchRecord> {
+    return this.httpClient.post<SearchRecord>(this.baseUrl + this.prefix + "/newSearch", {},
       {
         headers: appConfig.getHeaders()
       });
   }
-  getRequest(): Observable<SearchRecord[]> {
-    return this.httpClient.post<SearchRecord[]>(this.baseUrl + this.prefix + "/request", {},
+  getRequest(): Observable<SearchRecord> {
+    return this.httpClient.post<SearchRecord>(this.baseUrl + this.prefix + "/request", {},
       {
         headers: appConfig.getHeaders()
       });
   }
-  getExport(): Observable<SearchRecord[]> {
-    return this.httpClient.post<SearchRecord[]>(this.baseUrl + this.prefix + "/export", {},
+  getExport(): Observable<SearchRecord> {
+    return this.httpClient.post<SearchRecord>(this.baseUrl + this.prefix + "/export", {},
       {
         headers: appConfig.getHeaders()
       });
   }
-  getpageChanges(): Observable<SearchRecord[]> {
-    return this.httpClient.post<SearchRecord[]>(this.baseUrl + this.prefix + "/pageChanges", {},
+  getpageChanges(): Observable<SearchRecord> {
+    return this.httpClient.post<SearchRecord>(this.baseUrl + this.prefix + "/pageChanges", {},
       {
         headers: appConfig.getHeaders()
       });

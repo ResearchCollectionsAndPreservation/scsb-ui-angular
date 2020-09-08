@@ -1,37 +1,42 @@
 import { TestBed, async } from '@angular/core/testing';
 import { of } from 'rxjs';
 import { HttpClient, HttpHandler } from "@angular/common/http";
-import { JobsService } from './jobs.service';
+import { UserRolesService } from './userRoles.service';
 import { Router } from "@angular/router";
-describe('JobsService', () => {
+
+describe('RolesService', () => {
   const expectedResponse: String='';
-  let service: JobsService;
+  let service: UserRolesService;
   let httpClientSpy: { get: jasmine.Spy, post: jasmine.Spy };
   beforeEach(async(() => {
-    
+
     TestBed.configureTestingModule({
       declarations: [],
-      providers: [JobsService, HttpClient, HttpHandler, Router]
+      providers: [UserRolesService, HttpClient, HttpHandler, Router]
 
     })
       .compileComponents();
   }));
   beforeEach(() => {
     httpClientSpy = jasmine.createSpyObj('HttpClient', ['get', 'post']);
-    service = new JobsService(httpClientSpy as any);
+    service = new UserRolesService(httpClientSpy as any);
   });
-
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
-  it('validate displayJobs() response', () => {
+  it('validate showUserRoles() response', () => {
     httpClientSpy.get.and.returnValues(of(expectedResponse));
-    service.displayJobs().subscribe((res) =>
+    service.showUserRoles().subscribe((res) =>
       expect(res).toEqual(expectedResponse), fail);
   });
-  xit('validate scheduleJob() response', () => {
+  xit('validate searchUserRole() response', () => {
     httpClientSpy.get.and.returnValues(of(expectedResponse));
-    service.scheduleJob().subscribe((res) =>
+    service.searchUserRole().subscribe((res) =>
+      expect(res).toEqual(expectedResponse), fail);
+  });
+  it('validate deleteUserRole() response', () => {
+    httpClientSpy.get.and.returnValues(of(expectedResponse));
+    service.deleteUserRole().subscribe((res) =>
       expect(res).toEqual(expectedResponse), fail);
   });
 });

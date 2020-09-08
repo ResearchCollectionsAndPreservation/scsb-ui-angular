@@ -19,4 +19,12 @@ export class JobsService {
         headers: appConfig.getHeaders()
       });
   }
+  scheduleJob(): Observable<any> {
+    this.baseUrl = urls.baseUrl;
+    return this.httpClient.post<any[]>(this.baseUrl + this.prefix + "/jobs",
+      {
+        headers: appConfig.getHeaders()
+      });
+  }
+  
 }

@@ -6,5 +6,6 @@ export const urls = {
     collection: '/collection',
     requests: '/requests',
     reports: '/reports',
-    jobs: '/jobs'
+    jobs: '/jobs',
+    userRoles:'/userRoles'
 }

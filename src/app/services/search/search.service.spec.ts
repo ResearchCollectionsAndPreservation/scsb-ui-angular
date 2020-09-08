@@ -7,7 +7,7 @@ import { SearchService } from './search.service';
 import { SearchRecord } from '../../model/SearchRecord';
 
 describe('#SearchService', () => {
-  const expectedResponse: SearchRecord[] = [
+  const expectedResponse: SearchRecord = 
     {
       "fieldValue": "",
       "fieldName": "",
@@ -50,8 +50,7 @@ describe('#SearchService', () => {
       "errorMessage": "No search results found. Please refine search conditions.",
       "catalogingStatus": "Complete",
       "deleted": false
-    }
-  ];
+    };
 
   let searchService: SearchService;
   let httpClientSpy: { get: jasmine.Spy, post: jasmine.Spy };
